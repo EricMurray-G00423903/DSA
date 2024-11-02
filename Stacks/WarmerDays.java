@@ -4,7 +4,7 @@ public class WarmerDays {
     
     public static void main(String[] args) {
 
-        int[] temperatures = { 20, 22, 23, 19, 20, 30, 28};     //Expected return [1, 1, 3, 1, 0, 0]
+        int[] temperatures = { 20, 22, 23, 19, 20, 30, 28};     //Expected return [1, 1, 3, 1, 1, 0, 0]
         System.out.println("Returned Array : " + Arrays.toString(warmerDays(temperatures)));
         
     }
