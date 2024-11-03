@@ -2,7 +2,7 @@ package BinaryTree;
 
 public class BinaryTree {
     
-    TreeNode root;  //Create a new node called root
+    public TreeNode root;  //Create a new node called root
 
     public BinaryTree() {
         root = null;    //No value constructor it and set the root node to null
