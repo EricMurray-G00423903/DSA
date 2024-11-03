@@ -15,12 +15,13 @@ public class DFSBasic {
         for (int i = 0; i < 20; i++) {
 
             Random randomNumber = new Random();
-            int currentValue = randomNumber.nextInt(100);
+            int currentValue = randomNumber.nextInt(20);
             myTree.insert(currentValue);
             
         }
 
         traverseDFSPrint(myTree.root);  //Pass in the starting node of the binary tree to begin traversing
+        System.out.println(searchDFS(myTree.root, 6));
     }
 
     public static void traverseDFSPrint(TreeNode root) {    //Takes a Node as a parameter
@@ -39,6 +40,17 @@ public class DFSBasic {
         //If it gets to here, that means the current node has no children so this function finishes for that node
         //The function stack will then unwind and it will automatically move up to the parent and usually go down the other side of the parent until its exhausted
         //The stack will keep clearing and unwinding until there are no nodes left anywhere
+
+    }
+
+    public static boolean searchDFS(TreeNode root, int value) {
+
+        if (root == null) return false;
+
+        if (root.value == value) return true;
+        if (value < root.value) return searchDFS(root.left, value);
+        if (value > root.value) return searchDFS(root.right, value);
+        return false;
 
     }
 
