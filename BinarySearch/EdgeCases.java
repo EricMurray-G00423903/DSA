@@ -10,6 +10,7 @@
  */
 public class EdgeCases {
 
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
 
         // Control Testing Condition

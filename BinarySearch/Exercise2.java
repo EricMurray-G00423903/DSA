@@ -17,6 +17,7 @@ public class Exercise2 {
         System.out.println(Arrays.toString(multiBinary(arrThree, targetThree)));
     }
 
+    @SuppressWarnings("unused")
     public static int[] multiBinary(int[] arr, int target) {
 
         int start = 0;
