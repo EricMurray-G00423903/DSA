@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Graph {
 
-    Map<Integer, List<Integer>> adjacencyList;  //Create a new Map with an Integer as the Key(the number inside the node) and a List of Integers as the value(list of other nodes the key points to)
+    public Map<Integer, List<Integer>> adjacencyList;  //Create a new Map with an Integer as the Key(the number inside the node) and a List of Integers as the value(list of other nodes the key points to)
     boolean isDirected; //isDirected if its directed then Nodes only point one way, if its undirected nodes can point to anywhere and point to any number of each other
 
     public Graph(boolean isDirected) {  //Constructor with the isDirected boolean
